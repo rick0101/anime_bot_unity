@@ -1,6 +1,6 @@
 # Script per scaricare anime
 
-Questo script Python automatizza il processo di download di tutti gli episodi di una serie anime. E' per WINDOWS, ma può essere facilmente adattato anche per Linux, è necessario cambiare il chromedriver utilizzato da selenium.
+Questo script Python automatizza il processo di download di tutti gli episodi di una serie anime. E' per `WINDOWS`, ma può essere facilmente adattato anche per Linux, è necessario cambiare il chromedriver utilizzato da selenium.
 
 1. Scrape della pagina principale per identificare ed estrarre collegamenti ai singoli episodi.
 2. Scarica in sequenza ogni episodio in una directory specificata.
@@ -21,8 +21,8 @@ Fatto quello andrà a creare una cartella contenente il nome dell'anime nella vo
 di eventuali eppisodi non ancora scaricati).
 Al termine degli eppisodi, il programma finirà.
 
-Per farlo andare dovrete inserire l'URL della pagina principale dell'anime sub ita che intendete scaricare, nota bene che potete inserire più di un link alla volta, l'importante è che all'ultimo link, premiat invio, poi di nuovo invio lasciando il campo:
-"Inserisci anime da scaricare" VUOTO!!.
+Per farlo andare dovrete inserire l'URL della pagina principale dell'anime sub ita che intendete scaricare, nota bene che potete inserire `più di un link alla volta`, l'importante è che all'ultimo link, premiat invio, poi di nuovo invio lasciando il campo:
+"Inserisci anime da scaricare" `VUOTO!!`.
 Vedi l video per il tutorial.
 
 
@@ -47,9 +47,9 @@ pip install -r requirements.txt
 ```
 
 3. MODIFICA
-```
-Apri "anime_scraping_unity.py" con blocco note, vai su modifica, poi su sostituisci, e sostituisci UTENTE con il tuo nome del pc.
-```
+
+`Apri "anime_scraping_unity.py" con blocco note, vai su modifica, poi su sostituisci, e sostituisci UTENTE con il tuo nome del pc.`
+
 
 4. Utilizzo
 Esegui lo script:
@@ -62,10 +62,10 @@ Quando avrai finito di inserire i links per gli anime, ripremi invio senza inser
 ## AVVERTIMENTO
 
 Se smette di funzionare, prova a scaricare la versione più recente di Chromedriver in base al tuo sistema operativo.
-Link al driver Chrome: https://googlechromelabs.github.io/chrome-for-testing/
+Link al `driver Chrome:` https://googlechromelabs.github.io/chrome-for-testing/
 Vai su Stable e dalla riga 6 alla riga 10 hai i collegamenti per scaricare Chromedriver in base al tuo sistema operativo.
 
-Se avete scaricato solo alcuni eppisodi di un animez e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.
+Se avete scaricato solo alcuni eppisodi di un anime e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.
 Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il quale, una volta arrivato alla fine, verrà automaticamente eliminato.
 
 
