@@ -1,6 +1,6 @@
 # Anime Downloader Script
 
-This Python script automates the process of downloading all episodes of an anime series. By providing the script with the link to the main page of the anime, it:
+This Python script automates the process of downloading all episodes of an anime series. It is for WINDOWS, but it can be easly adpted for linux as well, it need to be changed the chromedriver used by selenium.
 
 1. Scrapes the main page to identify and extract links to individual episodes.
 2. Sequentially downloads each episode to a specified directory.
@@ -14,10 +14,7 @@ Resumption of interrupted downloads.
 
 
 ## Requirements
-Python 3.x
-beautifulsoup4 for web scraping
-requests for handling HTTP requests
-youtube_dl or yt_dlp for downloading media content
+"Read the requirments.txt file"
 
 
 ## Installation
@@ -28,17 +25,26 @@ git clone https://github.com/yourusername/anime-downloader.git
 cd anime-downloader
 ```
 
-2. Install the required packages:
+2. Install the required packages (ONE LINE PER COMMAND):
 ``` bash
+python -m venv venv
+./venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
 3. Usage
-Update the config.py file with the main page link of the anime and the desired download directory.
 Run the script:
 ``` bash
-python downloader.py
+python anime_scraping_unity.py
 ```
+
+## WARNING
+
+If it does stop working try to download the newer version of chromedriver based on your OS.
+
+Link to chromedriver: https://googlechromelabs.github.io/chrome-for-testing/
+
+Go to Stable, and from line 6 to line 10, you have the links for downloading chromedriver based on you OS.
 
 
 ## Contributing
