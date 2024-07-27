@@ -34,6 +34,7 @@ pip install -r requirements.txt
 ```
 
 3. MODIFICA
+
 Cerca "UTENTE" su VSCode (linea 397, 406, 409, previa ultieriore modifica) e modifica la parola "UTENTE" con il vostro nume utente del vostro PC.
 
 3. Utilizzo
