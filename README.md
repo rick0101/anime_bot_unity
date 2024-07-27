@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 3. MODIFICA
 
-Cerca "UTENTE" su VSCode (linea 397, 406, 409, previa ultieriore modifica) e modifica la parola "UTENTE" con il vostro nume utente del vostro PC.
+Apri "anime_scraping_unity.py" con blocco note, vai su visualizza, poi su sostituisci, e sostituisci UTENTE con il tuo nome del pc.
 
 4. Utilizzo
 Esegui lo script:
