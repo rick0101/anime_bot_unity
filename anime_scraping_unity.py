@@ -397,7 +397,7 @@ def run ():
             # bool = True
             # while bool:
             #     try:
-            #         shutil.move(r"C:\Users\ricca\Downloads" + nome_file_scaricato , dir)
+            #         shutil.move(r"C:\Users\UTENTE\Downloads" + nome_file_scaricato , dir)
             #         time.sleep(1)
             #         print("Provo spostare")
             #         bool = False
@@ -406,7 +406,7 @@ def run ():
             #         time.sleep(5)
                     
 
-            while not exists(r"C:\Users\ricca\Downloads" + "\\" + nome_file_scaricato ):  ########## MODIFICARE CON VOSTRO NOME UTENTE ########################
+            while not exists(r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato ):  ########## MODIFICARE CON VOSTRO NOME UTENTE ########################
                 time.sleep(5)
 
             # creazione file di salvataggio e scrittura
@@ -415,10 +415,10 @@ def run ():
                 f.write(nome_file_scaricato + "\n")
             
             try:
-                shutil.move(r"C:\Users\ricca\Downloads" + "\\" + nome_file_scaricato , dir)
+                shutil.move(r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato , dir)
                 time.sleep(1)
             except:
-                os.system("rm " + r"C:\Users\ricca\Downloads" + "\\" + nome_file_scaricato)
+                os.system("rm " + r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato)
 
             try:
                 driver.find_element(By.XPATH, "/html/div").click()
