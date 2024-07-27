@@ -24,6 +24,7 @@ Resumption of interrupted downloads.
 git clone git clone https://github.com/rick0101/anime_bot_unity.git
 cd anime_bot_unity
 ```
+If you get any errors try downloading the zip, below "code"
 
 2. Install the required packages (ONE LINE PER COMMAND):
 ``` bash
