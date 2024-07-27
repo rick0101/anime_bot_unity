@@ -13,6 +13,19 @@ Download sequenziale degli episodi.
 Ripresa dei download interrotti.
 
 
+## Funzionamento
+Il programma utilizza un simulatore web per bypassare delle difese anti-scraping di alcuni siti.
+Per prima cosa aggiunge ublock a chrome, ogni volta che avviate il programma (tranquilli che chrome usato da selenium e il vostro chrome sono 2 cose completamente separate. Tutto quello fatto su selenium non va a impattare il vostro chrome personale), 
+questo è essenziale per evitare pubblicità e blocker che renderebbero impossibile predire il comportamento della pagina.
+Fatto quello andrà a creare una cartella contenente il nome dell'anime nella vostra directory attuale, e un file .txt che conterrà gli eppisodi scaricati. Finito di scaricarli tutti, il file .txt verrà automaticamente eliminato (serve solo per tenere traccia
+di eventuali eppisodi non ancora scaricati).
+Al termine degli eppisodi, il programma finirà.
+
+Per farlo andare dovrete inserire l'URL della pagina principale dell'anime sub ita che intendete scaricare, nota bene che potete inserire più di un link alla volta, l'importante è che all'ultimo link, premiat invio, poi di nuovo invio lasciando il campo:
+"Inserisci anime da scaricare" VUOTO!!.
+Vedi l video per il tutorial.
+
+
 ## Requisiti
 "Leggi il file requirments.txt"
 
