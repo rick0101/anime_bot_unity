@@ -41,9 +41,7 @@ python anime_scraping_unity.py
 ## WARNING
 
 If it does stop working try to download the newer version of chromedriver based on your OS.
-
 Link to chromedriver: https://googlechromelabs.github.io/chrome-for-testing/
-
 Go to Stable, and from line 6 to line 10, you have the links for downloading chromedriver based on you OS.
 
 
