@@ -1,55 +1,58 @@
-# Anime Downloader Script
+# Script per scaricare anime
 
-This Python script automates the process of downloading all episodes of an anime series. It is for WINDOWS, but it can be easly adpted for linux as well, it need to be changed the chromedriver used by selenium.
+Questo script Python automatizza il processo di download di tutti gli episodi di una serie anime. E' per WINDOWS, ma può essere facilmente adattato anche per Linux, è necessario cambiare il chromedriver utilizzato da selenium.
 
-1. Scrapes the main page to identify and extract links to individual episodes.
-2. Sequentially downloads each episode to a specified directory.
-3. Handles potential interruptions and resumes downloads if needed.
-
-
-## Features
-Automatic scraping of episode links from the main page.
-Sequential download of episodes.
-Resumption of interrupted downloads.
+1. Scrape della pagina principale per identificare ed estrarre collegamenti ai singoli episodi.
+2. Scarica in sequenza ogni episodio in una directory specificata.
+3. Gestisce potenziali interruzioni e riprende i download se necessario.
 
 
-## Requirements
-"Read the requirments.txt file"
+## Caratteristiche
+Scraping automatico dei collegamenti agli episodi dalla pagina principale.
+Download sequenziale degli episodi.
+Ripresa dei download interrotti.
 
 
-## Installation
+## Requisiti
+"Leggi il file requirments.txt"
 
-1. Clone the repository:
-``` bash
+
+## Installazione
+
+1. Clona il repository:
+```bash
 git clone git clone https://github.com/rick0101/anime_bot_unity.git
-cd anime_bot_unity
+cdanime_bot_unity
 ```
-If you get any errors try downloading the zip, below "code"
+Se ricevi qualche errore prova a scaricare il file zip, sotto "codice"
 
-2. Install the required packages (ONE LINE PER COMMAND):
-``` bash
+2. Installare i pacchetti richiesti (UNA RIGA PER COMANDO):
+```bash
 python -m venv venv
 ./venv/Scripts/activate
-pip install -r requirements.txt
+pip install -r requisiti.txt
 ```
 
-3. Usage
-Run the script:
-``` bash
+3. MODIFICA
+Cerca "UTENTE" su VSCode (linea 397, 406, 409, previa ultieriore modifica) e modifica la parola "UTENTE" con il vostro nume utente del vostro PC.
+
+3. Utilizzo
+Esegui lo script:
+```bash
 python anime_scraping_unity.py
 ```
 
-## WARNING
+## AVVERTIMENTO
 
-If it does stop working try to download the newer version of chromedriver based on your OS.
-Link to chromedriver: https://googlechromelabs.github.io/chrome-for-testing/
-Go to Stable, and from line 6 to line 10, you have the links for downloading chromedriver based on you OS.
+Se smette di funzionare, prova a scaricare la versione più recente di Chromedriver in base al tuo sistema operativo.
+Link al driver Chrome: https://googlechromelabs.github.io/chrome-for-testing/
+Vai su Stable e dalla riga 6 alla riga 10 hai i collegamenti per scaricare Chromedriver in base al tuo sistema operativo.
 
 
-## Contributing
+## Contribuire
 
-1. Fork the repository.
-2. Create a new branch (git checkout -b feature-branch).
-3. Commit your changes (git commit -am 'Add new feature').
-4. Push to the branch (git push origin feature-branch).
-5. Create a new Pull Request.
+1. Effettuare il fork del repository.
+2. Crea un nuovo ramo (git checkout -b feature-branch).
+3. Applica le tue modifiche (git commit -am 'Aggiungi nuova funzionalità').
+4. Spingi sul ramo (git push origin feature-branch).
+5. Crea una nuova richiesta di pull.
