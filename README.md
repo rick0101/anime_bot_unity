@@ -14,7 +14,7 @@ Ripresa dei download interrotti.
 
 
 ## Funzionamento
-Il programma utilizza un simulatore web per bypassare delle difese anti-scraping di alcuni siti.
+Il programma utilizza un simulatore browser per bypassare delle difese anti-scraping di alcuni siti.
 Per prima cosa aggiunge ublock a chrome, ogni volta che avviate il programma (tranquilli che chrome usato da selenium e il vostro chrome sono 2 cose completamente separate. Tutto quello fatto su selenium non va a impattare il vostro chrome personale), 
 questo è essenziale per evitare pubblicità e blocker che renderebbero impossibile predire il comportamento della pagina.
 Fatto quello andrà a creare una cartella contenente il nome dell'anime nella vostra directory attuale, e un file .txt che conterrà gli eppisodi scaricati. Finito di scaricarli tutti, il file .txt verrà automaticamente eliminato (serve solo per tenere traccia
