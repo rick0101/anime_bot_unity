@@ -21,8 +21,8 @@ Resumption of interrupted downloads.
 
 1. Clone the repository:
 ``` bash
-git clone https://github.com/yourusername/anime-downloader.git
-cd anime-downloader
+git clone git clone https://github.com/rick0101/anime_bot_unity.git
+cd anime_bot_unity
 ```
 
 2. Install the required packages (ONE LINE PER COMMAND):
