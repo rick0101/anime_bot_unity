@@ -21,8 +21,8 @@ Ripresa dei download interrotti.
 
 1. Clona il repository:
 ```bash
-git clone git clone https://github.com/rick0101/anime_bot_unity.git
-cdanime_bot_unity
+git clone https://github.com/rick0101/anime_bot_unity.git
+cd anime_bot_unity
 ```
 Se ricevi qualche errore prova a scaricare il file zip, sotto "codice"
 
@@ -30,7 +30,7 @@ Se ricevi qualche errore prova a scaricare il file zip, sotto "codice"
 ```bash
 python -m venv venv
 ./venv/Scripts/activate
-pip install -r requisiti.txt
+pip install -r requirements.txt
 ```
 
 3. MODIFICA
@@ -49,10 +49,10 @@ Link al driver Chrome: https://googlechromelabs.github.io/chrome-for-testing/
 Vai su Stable e dalla riga 6 alla riga 10 hai i collegamenti per scaricare Chromedriver in base al tuo sistema operativo.
 
 
-## Contribuire
+## Contributi
 
 1. Effettuare il fork del repository.
 2. Crea un nuovo ramo (git checkout -b feature-branch).
 3. Applica le tue modifiche (git commit -am 'Aggiungi nuova funzionalità').
-4. Spingi sul ramo (git push origin feature-branch).
+4. Push sul ramo (git push origin feature-branch).
 5. Crea una nuova richiesta di pull.
