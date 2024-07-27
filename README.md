@@ -61,6 +61,10 @@ Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il 
 https://github.com/user-attachments/assets/649006ab-c8a9-459f-a63e-f163ecd9030b
 
 
+https://github.com/user-attachments/assets/78cbf8db-c419-44da-b6aa-895633c487ba
+
+
+
 ## Contributi
 
 
