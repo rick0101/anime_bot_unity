@@ -37,11 +37,13 @@ pip install -r requirements.txt
 
 Cerca "UTENTE" su VSCode (linea 397, 406, 409, previa ultieriore modifica) e modifica la parola "UTENTE" con il vostro nume utente del vostro PC.
 
-3. Utilizzo
+4. Utilizzo
 Esegui lo script:
 ```bash
 python anime_scraping_unity.py
 ```
+Inserisci ora 1 link per volta degli anime da scaricare, e premi invio. 
+Quando avrai finito di inserire i links per gli anime, ripremi invio senza inserire nulla.
 
 ## AVVERTIMENTO
 
