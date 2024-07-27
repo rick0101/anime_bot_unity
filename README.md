@@ -52,8 +52,17 @@ Se smette di funzionare, prova a scaricare la versione più recente di Chromedri
 Link al driver Chrome: https://googlechromelabs.github.io/chrome-for-testing/
 Vai su Stable e dalla riga 6 alla riga 10 hai i collegamenti per scaricare Chromedriver in base al tuo sistema operativo.
 
+Se avete scaricato solo alcuni eppisodi di un animez e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.
+Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il quale, una volta arrivato alla fine, verrà automaticamente eliminato.
+
+
+## TUTORIAL VIDEO
+
+https://github.com/user-attachments/assets/649006ab-c8a9-459f-a63e-f163ecd9030b
+
 
 ## Contributi
+
 
 1. Effettuare il fork del repository.
 2. Crea un nuovo ramo (git checkout -b feature-branch).
