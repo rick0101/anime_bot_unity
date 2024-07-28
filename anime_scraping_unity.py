@@ -37,7 +37,6 @@ def run ():
         time.sleep(2)
         keyboard = Controller()
 
-        # print(driver.find_element(By.CLASS_NAME, "content-container").text.strip())
         try:
             keyboard.press(Key.tab)
             keyboard.release(Key.tab)
@@ -71,8 +70,7 @@ def run ():
         keyboard.release(Key.tab)
         keyboard.press(Key.tab)
         keyboard.release(Key.tab)
-        # keyboard.press(Key.tab)
-        # keyboard.release(Key.tab)
+
         keyboard.press(Key.enter)
         keyboard.release(Key.enter)
         time.sleep(2)
@@ -89,23 +87,15 @@ def run ():
         driver.get(url)
         title = driver.find_element(By.CLASS_NAME, "title").text.strip().replace(":", "_").replace("!","").replace("?", "").replace("à", "a").replace("ò", "o").replace("ù", "u").replace("è", "e").replace("\n", "").replace(" ", "_")
         # print(title + "\n\n")
-
-        # scraper = cloudscraper.create_scraper()
-        # page_raw = scraper.get (url)
-
-        # soup = BeautifulSoup(page_raw.text, "html.parser")
-        # title = soup.find(class_ = "title").text.strip().replace(":", "_").replace("!","").replace("?", "").replace("à", "a").replace("ò", "o").replace("ù", "u").replace("è", "e").replace("\n", "").replace(" ", "_")
-
-
         dir = str(title.replace("\n", ""))
+        
         # creare una nuova cartella con il titolo dell'anime
         cartellaDaVerificare=Path(dir)
-
         if not cartellaDaVerificare.is_dir():
             os.mkdir(dir)
             with open (dir + "\\" + title + ".txt", "w") as f:
                 f.write("")
-            # os.system("chmod ugo+rwx " + dir + "/")                      # permessi di scrittura modifica e lettura
+            # os.system("chmod ugo+rwx " + dir + "/")                      # permessi di scrittura modifica e lettura (solo per linux)
 
 
         # inizio scraping
@@ -113,9 +103,7 @@ def run ():
             driver.find_element(By.XPATH, "/html/body").click()
         except:
             pass
-        # time.sleep(1)
 
-        #time.sleep(1)
         if len(driver.window_handles) > 1:
             keyboard = Controller()
             keyboard.press(Key.ctrl)
@@ -124,7 +112,7 @@ def run ():
             keyboard.release('w')
         
 
-        # prendere il numero di epidsodi:      /html/body/div/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]    
+        # prendere il numero di epidsodi: 
         try:
             add = 0
             pages = driver.find_element(By.XPATH,"/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]").text.splitlines()
@@ -197,15 +185,12 @@ def run ():
         except:
             pass
 
-
         time.sleep(1)
         # print (pages)
 
-
+        
         with open (dir + "/" + title + ".txt", "r") as f:
             lista_gia_scaricati = f.readlines()
-
-
         
         for i in tqdm (range (1, pages+1)):
 
@@ -305,12 +290,6 @@ def run ():
             except:
                 pass
 
-            # keyboard.press(Key.ctrl)
-            # keyboard.press('w')
-            # keyboard.release(Key.ctrl)
-            # keyboard.release('w')
-            # time.sleep(1)
-
             try:    
                 driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").click()
             except:
@@ -344,8 +323,6 @@ def run ():
             link = "https://" + link
             # print(link)
 
-            
-
         
             html = requests.get(link)
             s = BeautifulSoup(html.content, "html.parser" )
@@ -357,18 +334,9 @@ def run ():
                 nome_file_scaricato = nome_file_scaricato.replace("%2C", ",")
             if "%3A" in nome_file_scaricato:
                 nome_file_scaricato = nome_file_scaricato.replace("%3A", "_")
-        
 
+            # se è già stato scaricato l'eppisodio, skip al prossimo
             if nome_file_scaricato + "\n" in lista_gia_scaricati:
-                # if  finish_time - start_time > 19.9:
-                #     driver.find_element(By.XPATH, "/html/div").click()
-                #     #time.sleep(1)
-                #     keyboard = Controller()
-                #     keyboard.press(Key.ctrl)
-                #     keyboard.press('w')
-                #     keyboard.release(Key.ctrl)
-                #     keyboard.release('w')
-                #     start_time = time.time()
                 continue
 
             if len(driver.window_handles) > 1:
@@ -379,14 +347,6 @@ def run ():
                 keyboard.release('w')
             time.sleep(1)
             driver.get(link_download)
-            
-            # print(driver.find_element(By.CLASS_NAME, "description").text)
-  
-            # keyboard.press(Key.ctrl)
-            # keyboard.press('w')
-            # keyboard.release(Key.ctrl)
-            # keyboard.release('w')
-            # time.sleep(1)
 
             try:
                 nome_file_scaricato = nome_file_scaricato.replace("%3F%21", "_!")
@@ -394,30 +354,19 @@ def run ():
                 pass
             print(nome_file_scaricato)
             
-            # bool = True
-            # while bool:
-            #     try:
-            #         shutil.move(r"C:\Users\UTENTE\Downloads" + nome_file_scaricato , dir)
-            #         time.sleep(1)
-            #         print("Provo spostare")
-            #         bool = False
-            #     except:
-            #         print("Non sposto")
-            #         time.sleep(5)
-                    
-
+            # FInchè non ha finito il download, aspetta 5 secondi...
             while not exists(r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato ):  ########## MODIFICARE CON VOSTRO NOME UTENTE ########################
                 time.sleep(5)
 
             # creazione file di salvataggio e scrittura
-            
             with open (dir + "\\" + title + ".txt", "a") as f:
                 f.write(nome_file_scaricato + "\n")
-            
+            # sposto l'eppisodio scaricato nella cartella creata "dir" con il nome dell'anime
             try:
                 shutil.move(r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato , dir)
                 time.sleep(1)
             except:
+                # se è già presente, la elimito dalla cartella downloads
                 os.system("rm " + r"C:\Users\UTENTE\Downloads" + "\\" + nome_file_scaricato)
 
             try:
@@ -431,7 +380,7 @@ def run ():
                 time.sleep(1)
             except:
                 pass
-
+            #arrivato alla fine, elimino il file .txt creato per tenere traccia di dove ero arrivato
             if i == pages:
                 os.system("rm " + dir + "\\" + title + ".txt")
             
