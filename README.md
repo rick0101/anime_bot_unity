@@ -1,15 +1,20 @@
 # Script per scaricare anime
 
-Questo script Python automatizza il processo di download di tutti gli episodi di una serie anime. E' per `WINDOWS`, ma può essere facilmente adattato anche per Linux, è necessario cambiare il chromedriver utilizzato da selenium.
+Questo script Python automatizza il processo di download di tutti gli episodi di una serie anime. E' per `WINDOWS`, ma può essere facilmente adattato anche per Linux, è necessario cambiare il chromedriver utilizzato da selenium, l'estensione, e i vari percorsi che sono diversi tra windows a linux.
+
 
 1. Scrape della pagina principale per identificare ed estrarre collegamenti ai singoli episodi.
 2. Scarica in sequenza ogni episodio in una directory specificata.
 3. Gestisce potenziali interruzioni e riprende i download se necessario.
 
 
+## Requirements
+Python 3
+
+
 ## Caratteristiche
-Scraping automatico dei collegamenti agli episodi dalla pagina principale.
-Download sequenziale degli episodi.
+Scraping automatico degli episodi dalla pagina principale.\
+Download sequenziale degli episodi.\
 Ripresa dei download interrotti.
 
 
