@@ -75,9 +75,9 @@ Quando avrai finito di inserire i links per gli anime, ripremi invio senza inser
 
 Se smette di funzionare, provate a scaricare la versione più recente di Chromedriver.\
 Link al `driver Chrome:` https://googlechromelabs.github.io/chrome-for-testing/ \
-Andate su Stable e dalla riga 6 alla riga 10 avete i collegamenti per scaricare Chromedriver in base al vostro sistema operativo.
+Andate su Stable e dalla riga 6 alla riga 10 avete i collegamenti per scaricare Chromedriver in base al vostro sistema operativo (Questo bot funziona solo per Windows).
 
-Se avete scaricato solo alcuni eppisodi di un anime e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.
+Se avete scaricato solo alcuni eppisodi di un anime e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.\
 Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il quale, una volta arrivato alla fine, verrà automaticamente eliminato.
 
 
