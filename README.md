@@ -22,8 +22,9 @@ Ripresa dei download interrotti.
 Il programma utilizza un simulatore browser per bypassare delle difese anti-scraping di alcuni siti.
 Per prima cosa aggiunge ublock a chrome, ogni volta che avviate il programma (tranquilli che chrome usato da selenium e il vostro chrome sono 2 cose completamente separate. Tutto quello fatto su selenium non va a impattare il vostro chrome personale), 
 questo è essenziale per evitare pubblicità e blocker che renderebbero impossibile predire il comportamento della pagina.
-Fatto quello andrà a creare una cartella contenente il nome dell'anime nella vostra directory attuale, e un file .txt che conterrà gli eppisodi scaricati. Finito di scaricarli tutti, il file .txt verrà automaticamente eliminato (serve solo per tenere traccia
-di eventuali eppisodi non ancora scaricati).
+Fatto quello, andrà a creare una cartella contenente il nome dell'anime nella vostra directory attuale e un file .txt che conterrà gli eppisodi scaricati.\
+Finito di scaricarli tutti, il file .txt verrà automaticamente eliminato (serve solo per tenere traccia
+di eventuali eppisodi non ancora scaricati).\
 Al termine degli eppisodi, il programma finirà.
 
 Per farlo andare dovrete inserire l'URL della pagina principale dell'anime sub ita che intendete scaricare, nota bene che potete inserire `più di un link alla volta`, l'importante è che all'ultimo link, premiat invio, poi di nuovo invio lasciando il campo:
@@ -40,6 +41,8 @@ Vedi l video per il tutorial.
 1. Clona il repository:
 ```bash
 git clone https://github.com/rick0101/anime_bot_unity.git
+```
+```bash
 cd anime_bot_unity
 ```
 Se ricevi qualche errore prova a scaricare il file zip, sotto "codice"
@@ -47,7 +50,11 @@ Se ricevi qualche errore prova a scaricare il file zip, sotto "codice"
 2. Installare i pacchetti richiesti (UNA RIGA PER COMANDO):
 ```bash
 python -m venv venv
+```
+```bash
 ./venv/Scripts/activate
+```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -66,9 +73,9 @@ Quando avrai finito di inserire i links per gli anime, ripremi invio senza inser
 
 ## AVVERTIMENTO
 
-Se smette di funzionare, prova a scaricare la versione più recente di Chromedriver in base al tuo sistema operativo.
-Link al `driver Chrome:` https://googlechromelabs.github.io/chrome-for-testing/
-Vai su Stable e dalla riga 6 alla riga 10 hai i collegamenti per scaricare Chromedriver in base al tuo sistema operativo.
+Se smette di funzionare, provate a scaricare la versione più recente di Chromedriver.\
+Link al `driver Chrome:` https://googlechromelabs.github.io/chrome-for-testing/ \
+Andate su Stable e dalla riga 6 alla riga 10 avete i collegamenti per scaricare Chromedriver in base al vostro sistema operativo.
 
 Se avete scaricato solo alcuni eppisodi di un anime e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.
 Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il quale, una volta arrivato alla fine, verrà automaticamente eliminato.
