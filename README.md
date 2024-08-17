@@ -78,7 +78,11 @@ Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il 
 
 ## TUTORIAL VIDEO
 
-https://github.com/user-attachments/assets/649006ab-c8a9-459f-a63e-f163ecd9030b
+
+
+
+https://github.com/user-attachments/assets/3471c599-6829-4613-bc8b-91ff40ed44ea
+
 
 
 https://github.com/user-attachments/assets/78cbf8db-c419-44da-b6aa-895633c487ba
