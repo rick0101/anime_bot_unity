@@ -290,8 +290,9 @@ def aggiusta_nome (nome):
         return nome_file_scaricato
     return nome
 
-#creazione cartella nome anime
-def creazione_cartella (cartellaDaVerificare, title):
+# creazione cartella nome anime
+def creazione_cartella (title, dir):
+    cartellaDaVerificare=Path(dir)
     if not cartellaDaVerificare.is_dir():
         os.mkdir(dir)
         with open (dir + "\\" + title + ".txt", "w") as f:
@@ -330,8 +331,7 @@ def run ():
         dir = str(title.replace("\n", ""))
         
         # creare una nuova cartella con il titolo dell'anime
-        cartellaDaVerificare=Path(dir)
-        creazione_cartella(cartellaDaVerificare, title)
+        creazione_cartella(title, dir)
         
 
 
