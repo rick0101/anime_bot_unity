@@ -182,74 +182,93 @@ def scroll_up ():
 def get_link_raw (pages, driver, i):
     try:
         if pages > 100:                                         
-            driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]").click()
+            video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]")
+            video.click()
         else:
             try:
-                driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                video.click()
             except:
                 pass
             try:
-                driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]").click()
+                video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]")
+                video.click()
             except:
-                driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                video.click()
     except:
         scroll_up()
         try:
             if pages > 100:
-                driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]").click()
+                video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]")
+                video.click()
             else:
                 try:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                    video.click()
                 except:
                     pass
                 try:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]")
+                    video.click()
                 except:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                    video.click()
         except:
             try:
                 driver.find_element(By.XPATH, "/html/div").click()
+                time.sleep(1)
             except:
                 pass
             if pages > 100:
-                driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]").click()
+                video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[5]/div[" + str(i) + "]")
+                video.click()
             else:
                 try:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                    video.click()
                 except:
                     pass
                 try:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[4]/div["+ str(i) + "]")
+                    video.click()
                 except:
                     pass
                 try:
-                    driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]").click()
+                    video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[4]/div[" + str(i) + "]")
+                    video.click()
                 except:
                     pass
     check_open_pages(driver)
     try:    
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
     try:
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
     try:
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
 
     try:    
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
     try:
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[3]/div[2]/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
     try:
-        driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").click()
+        video = driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe")
+        video.click()
     except:
         pass
     time.sleep(1)
@@ -269,6 +288,7 @@ def get_link_raw (pages, driver, i):
         link_raw = (driver.find_element(By.XPATH, "/html/body/div[1]/main/div/div[2]/div[2]/b/b/div[1]/div/div/div[2]/div/div/iframe").get_attribute('outerHTML'))
     except:
         pass
+
 
     return link_raw
 
@@ -346,8 +366,11 @@ def run ():
         time.sleep(1)
         # print (pages)
 
-        with open (dir + "/" + title + ".txt", "r") as f:
-            lista_gia_scaricati = f.readlines()
+        try:
+            with open (dir + "/" + title + ".txt", "r") as f:
+                lista_gia_scaricati = f.readlines()
+        except:
+            lista_gia_scaricati = []
         
         for i in tqdm (range (1, pages+1)):
 
