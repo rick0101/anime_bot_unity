@@ -58,12 +58,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-3. MODIFICA
-
-`Apri "anime_scraping_unity.py" con blocco note, vai su modifica, poi su sostituisci, e sostituisci UTENTE con il tuo nome del pc.`
-
-
-4. Utilizzo
+3. Utilizzo
 Esegui lo script:
 ```bash
 python anime_scraping_unity.py
