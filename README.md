@@ -72,6 +72,9 @@ Se smette di funzionare, provate a scaricare la versione più recente di Chromed
 Link al `driver Chrome:` https://googlechromelabs.github.io/chrome-for-testing/ \
 Andate su Stable e dalla riga 6 alla riga 10 avete i collegamenti per scaricare Chromedriver in base al vostro sistema operativo (Questo bot funziona solo per Windows).
 
+Per utilizzare lo script su OS linux, create prima una cartella chiamata "anime" nella seguente directory: `/home/USER/` dove al posto di USER ci sarà il nome del vostro PC. 
+Questo perchè gli anime verranno aggiunti nella seguente directory finale `/home/USER/anime`, nel mio caso, il mio nome utente è "ricca" quindi risulterà: `/home/ricca/anime`.
+
 Se avete scaricato solo alcuni eppisodi di un anime e poi interrompete, alla riapertura del programma verranno scaricati solo gli eppisodi mancanti.\
 Il tutto è tenuto traccia dal file .txt presente nella cartella dell'anime, il quale, una volta arrivato alla fine, verrà automaticamente eliminato.
 
